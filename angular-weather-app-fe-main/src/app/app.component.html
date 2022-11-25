@@ -10,9 +10,9 @@
   <h1>Weather in {{ selectedCountry }}</h1>
   <h3>Temperature</h3>
   <div>
-    <span>Current Temperatire: {{ weatherData.main.temp }}</span>
-    <span>Maximum Temperatire: {{ weatherData.main.temp_min }}</span>
-    <span>Minimum Temperatire: {{ weatherData.main.temp_max }}</span>
+    <span>Temperatire: {{ weatherData.main.temp }}</span>
+    <span>Max Temperatire: {{ weatherData.main.temp_min }}</span>
+    <span>Min Temperatire: {{ weatherData.main.temp_max }}</span>
   </div>
   <h3>Humidity</h3>
   <div>
@@ -21,7 +21,7 @@
   <h3>Wind</h3>
   <div>
     <span
-      >Speed of wind is {{ weatherData.wind.speed }} at
+      >Speed of wind  {{ weatherData.wind.speed }} at
       {{ weatherData.wind.deg }} degrees.</span
     >
     <span *ngIf="weatherData.wind.gust"
